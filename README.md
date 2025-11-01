@@ -1,2 +1,2 @@
 
-`link:` https://maninspacee.github.io/frontend-and-backend-practice
+`link:` https://github.com/paleavenger/front-back-practice9-12
