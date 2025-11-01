@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Семестровая работа</title>
+	<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="page-container">
+
+	<!-- HEADER -->
+	<header class="header">
+		<h1 class="header__title">HEADER</h1>
+		<button class="btn-theme" id="theme-toggle">🌙</button>
+	</header>
+
+	<!-- NAVIGATION -->
+	<nav class="nav">
+		<ul class="nav__list">
+			<li class="nav__item nav__item--active"><a class="nav__link " href="index_v1.html">Главная</a></li>
+			<li class="nav__item"><a class="nav__link" href="pages/news.html">Новости</a></li>
+			<li class="nav__item nav__item--disabled"><a class="nav__link" href="pages/practices.html">Практики</a></li>
+			<li class="nav__item"><a class="nav__link" href="pages/goods_v1.html">Товары</a></li>
+			<li class="nav__item"><a class="nav__link" href="pages/contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
+
+	<!-- MAIN CONTENT -->
+	<main class="main">
+
+		<!-- PROFILE -->
+		<div class="profile">
+			<img class="profile__photo" src="assets/images/photo.png" alt="Фото автора">
+			<div class="profile__box">
+				<h2 class="profile__name">Мартыненко Климент</h2>
+				<p class="profile__group">ЭФБО-12-24</p>
+			</div>
+
+		</div>
+
+		<!-- ABOUT ME -->
+		<div class="about">
+			<h2 class="about__title">Обо мне</h2>
+			<p class="about__text">Студент, увлекаюсь веб-разработкой. Изучаю CSS, HTML, Javascript...
+				Люблю создавать красивые и функциональные сайты</p>
+		</div>
+
+		<!-- SKILLS -->
+		<h2 class="skills__title">Мои навыки</h2>
+		<div class="skills">
+			<div class="skills__item skills__item--html">HTML</div>
+			<div class="skills__item skills__item--css">CSS</div>
+			<div class="skills__item skills__item--js">JS</div>
+		</div>
+
+		<!-- EXPERIENCE -->
+		<h2 class="experience__title">Проекты</h2>
+		<div class="experience">
+			<div class="experience__card">
+				<h3 class="experience__position">Личный сайт</h3>
+				<p class="experience__description">Сайт-портфолио на html+css+js</p>
+			</div>
+			<div class="experience__card">
+				<h3 class="experience__position">Todo приложение</h3>
+				<p class="experience__description">Простое приложение для планировки задач.</p>
+			</div>
+		</div>
+
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__text">Футер</div>
+	</footer>
+
+</div>
+</body>
+<audio id="mySound" src="assets/dm.mp3"></audio>
+<script src="./index.js" defer></script>
+</html>

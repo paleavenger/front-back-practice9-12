@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/styles.css">
+	<title>Контакты</title>
+</head>
+<body>
+<div class="page-container">
+	<!-- HEADER -->
+	<header class="header">
+		<h1 class="header__title">HEADER</h1>
+		<button class="btn-theme" id="theme-toggle">🌙</button>
+	</header>
+	<nav class="nav">
+		<ul class="nav__list">
+			<li class="nav__item"><a class="nav__link" href="../index_v1.html">Главная</a></li>
+			<li class="nav__item"><a class="nav__link" href="news.html">Новости</a></li>
+			<li class="nav__item nav__item--disabled"><a class="nav__link" href="practices.html">Практики</a></li>
+			<li class="nav__item"><a class="nav__link" href="goods_v1.html">Товары</a></li>
+			<li class="nav__item nav__item--active"><a class="nav__link" href="contacts.html">Контакты</a></li>
+		</ul>
+	</nav>
+
+	<!-- MAIN -->
+	<main class="main">
+		<h1 class="contacts__title">Контакты</h1>
+		<div class="contacts">
+			<p class="contacts__item">Адрес электронной почты: klimentmart@gmail.com</p>
+			<p class="contacts__item">Адрес: г. Москва, ул. Примерная, д. 10</p>
+			<button id="OpenBtn" class="btn btn-primary">Связаться с нами</button>
+
+		</div>
+	</main>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="footer__text">Футер</div>
+	</footer>
+
+	<dialog id="MyDialog">
+		<div class="modal-header">
+			<h2>Форма обратной связи</h2>
+		</div>
+
+		<div class="modal-content">
+			<form id="feedbackForm" method="dialog">
+
+				<div class="form-group">
+					<label for="category">Категория обращения: <span class="required">*</span></label>
+					<select id="category" name="category" required>
+						<option value="">Выберите категорию</option>
+						<option value="technical">Техническая поддержка</option>
+						<option value="commercial">Коммерческое предложение</option>
+						<option value="cooperation">Сотрудничество</option>
+						<option value="complaint">Жалоба</option>
+						<option value="suggestion">Предложение</option>
+						<option value="other">Другое</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="name">Имя: <span class="required">*</span></label>
+					<input type="text" id="name" name="name" required>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email: <span class="required">*</span></label>
+					<input type="email" id="email" name="email" required>
+				</div>
+
+				<div class="form-group">
+					<label for="message">Сообщение: <span class="required">*</span></label>
+					<textarea id="message" name="message" required></textarea>
+				</div>
+
+				<div class="modal-actions">
+					<button type="button" class="btn btn-secondary" id="CloseBtn">Отмена</button>
+					<button type="button" class="btn btn-primary" id="SubmitBtn">Отправить</button>
+				</div>
+
+			</form>
+		</div>
+	</dialog>
+
+</div>
+<audio id="mySound" src="../assets/dm.mp3"></audio>
+<script src="../index.js" defer></script>
+</body>
+</html>

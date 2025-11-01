@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/assets/test_styles.css">
+	<title>Document</title>
+</head>
+<body>
+
+<button id="OpenBtn" class="btn btn-primary">Open Modal</button>
+
+<dialog id="MyDialog">
+	<div class="modal-header">
+		<h2>Форма обратной связи</h2>
+	</div>
+
+	<div class="modal-content">
+		<form id="feedbackForm" method="dialog">
+
+			<div class="form-group">
+				<label for="category">Категория обращения: <span class="required">*</span></label>
+				<select id="category" name="category" required>
+					<option value="">Выберите категорию</option>
+					<option value="technical">Техническая поддержка</option>
+					<option value="commercial">Коммерческое предложение</option>
+					<option value="cooperation">Сотрудничество</option>
+					<option value="complaint">Жалоба</option>
+					<option value="suggestion">Предложение</option>
+					<option value="other">Другое</option>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<label for="name">Имя: <span class="required">*</span></label>
+				<input type="text" id="name" name="name" required>
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email: <span class="required">*</span></label>
+				<input type="email" id="email" name="email" required>
+			</div>
+
+			<div class="form-group">
+				<label for="message">Сообщение: <span class="required">*</span></label>
+				<textarea id="message" name="message" required></textarea>
+			</div>
+
+			<div class="modal-actions">
+				<button type="button" class="btn btn-secondary" id="CloseBtn">Отмена</button>
+				<button type="button" class="btn btn-primary" id="SubmitBtn">Отправить</button>
+			</div>
+
+		</form>
+	</div>
+</dialog>
+
+<script src="../index.js" defer></script>
+</body>
+</html>
